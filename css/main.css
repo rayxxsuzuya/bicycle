@@ -97,3 +97,200 @@ body {
 .header__link:hover {
   color: #64c29e;
 }
+
+.about {
+  background-color: #f7f7f7;
+}
+
+.about .generation {
+  padding-top: 117px;
+  padding-bottom: 108px;
+  padding: 117px 15px 108px 15px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.about .generation__icon {
+  margin-bottom: 34px;
+}
+
+.about .generation__title {
+  color: #353738;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  margin-bottom: 19px;
+}
+
+.about .generation__subtitle {
+  max-width: 1079px;
+  color: #848789;
+  font-family: Lato;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 34px;
+  margin: 0 auto;
+}
+
+.about .aboutBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.about .aboutBlock .leftItem {
+  background: #282f35 url('../img/about-bg-1.jpg') no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+@supports (-webkit-appearance:none) {
+  .about .aboutBlock .leftItem {
+    background-image: url("../img/about-bg-1.webp");
+  }
+}
+
+.about .aboutBlock.second .leftItem {
+  background: #282f35 url('../img/about-bg-2.jpg') no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+@supports (-webkit-appearance:none) {
+  .about .aboutBlock.second .leftItem {
+    background-image: url("../img/about-bg-2.webp");
+  }
+}
+
+.about .aboutBlock .rightItem {
+  text-align: center;
+  width: 33.33333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.about .aboutBlock .rightItem .rightWrapper {
+  padding: 70px 0 54px 0;
+  position: relative;
+}
+
+.about .aboutBlock .rightItem .rightWrapper:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+.about .aboutBlock .rightItem .rightWrapper .rightIcon {
+  margin-bottom: 31px;
+}
+
+.about .aboutBlock .rightItem .rightWrapper .rightTitle {
+  color: #353738;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.about .aboutBlock .rightItem .rightWrapper .rightSubtitle {
+  color: #848789;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 30px;
+  max-width: 398px;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+.about .aboutBlock .rightItem .rightWrapper .rightSubtitle:after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #e1e1e1;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.about .aboutBlock .rightItem .rightImage {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.about .aboutBlock.third > div {
+  width: 33.33333333%;
+}
+
+.about .aboutBlock.third .leftItem:nth-child(1) {
+  background: #282f35 url('../img/about-bg-3.jpg') no-repeat center;
+}
+
+@supports (-webkit-appearance:none) {
+  .about .aboutBlock.third .leftItem:nth-child(1) {
+    background-image: url("../img/about-bg-3.webp");
+  }
+}
+
+.about .aboutBlock.third .leftItem:nth-child(3) {
+  background: #282f35 url('../img/about-bg-4.jpg') no-repeat center;
+}
+
+@supports (-webkit-appearance:none) {
+  .about .aboutBlock.third .leftItem:nth-child(3) {
+    background-image: url("../img/about-bg-4.webp");
+  }
+}
+
+.about .aboutBlock.third .rightItem .rightWrapper {
+  padding: 48px 0 49px 0;
+}
