@@ -1002,54 +1002,10 @@ body {
   }
 
   .shop__item:nth-child(1) {
-    grid-column: auto;
-    grid-row: auto;
-  }
-
-  .shop__item:nth-child(2) {
-    grid-column: auto;
-    grid-row: auto / auto;
-  }
-
-  .shop__item:nth-child(3) {
-    -ms-grid-row-span: 2;
-    grid-row: span 2;
-    grid-column: auto;
-  }
-
-  .shop__item:nth-child(4) {
-    -ms-grid-row-span: 2;
-    grid-row: span 2;
-    grid-column: auto;
-  }
-
-  .shop__item:nth-child(5) {
-    -ms-grid-column-span: 2;
-    grid-column: span 2;
-  }
-
-  .shop__item:nth-child(6) {
-    -ms-grid-column-span: 2;
-    grid-column: span 2;
-  }
-
-  .shop__item:nth-child(8) {
-    -ms-grid-row: 2;
-    grid-row-start: 2;
     -ms-grid-column: 2;
     grid-column-start: 2;
-  }
-
-  .shop__block {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .shop__item:nth-child(1) {
-    grid-column: auto;
-    grid-row: auto;
+    -ms-grid-row: 2;
+    grid-row-start: 2;
   }
 
   .shop__item:nth-child(2) {
@@ -1084,10 +1040,10 @@ body {
   }
 
   .shop__item:nth-child(8) {
-    -ms-grid-row: 2;
-    grid-row-start: 2;
-    -ms-grid-column: 2;
-    grid-column-start: 2;
+    -ms-grid-row: 4;
+    grid-row-start: 4;
+    -ms-grid-column: 3;
+    grid-column-start: 3;
   }
 }
 
@@ -1187,6 +1143,55 @@ body {
   }
 }
 
+@media (max-width: 534px) {
+  .shop__block {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .shop__item:nth-child(1) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  .shop__item:nth-child(2) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  .shop__item:nth-child(3) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  .shop__item:nth-child(4) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  .shop__item:nth-child(5) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  .shop__item:nth-child(6) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  .shop__item:nth-child(7) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  .shop__item:nth-child(8) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+}
+
 @media (max-width: 533px) {
   .about .aboutBlock .rightItem {
     width: 100%;
@@ -1220,6 +1225,23 @@ body {
 
   .slick-dots {
     top: 115%;
+  }
+}
+
+@media (max-width: 463px) {
+  .mailing__form {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .mailing__unput {
+    width: 100%;
+  }
+
+  .mailing__btn {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
   }
 }
 
