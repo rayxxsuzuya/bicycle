@@ -6,4 +6,5 @@ $('.twitter__block').slick({
 	autoplaySpeed: 2000,
 	slidesToShow: 1,
 	dots: true,
+	arrows: false,
 });
